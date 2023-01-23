@@ -52,15 +52,17 @@ def job():
         print('Нужно зайти в магазин')
 #job()
 
+#Задача 6
 def bank(x, y, p):
     g = 0
-    y = y/12
-    while x<p:
-        x += (x/100*y)
+    p = p/12
+    while y >= x:
+        x += (x/100*p)
         g += 1
-    print ('Пройдет лет всего:', int(g/12))
+    print ('Пройдет лет всего:', round(g/12), 'до получения желаемой суммы')
 
-#bank(int(input('Вклад:')), int(input('сумма за год:')), int(input('проценц за год:')))
+bank(int(input('Вклад:')), int(input('Желаемая сумма:')),
+     int(input('Ставка банка годовых процентов:')))
 
 #Задача 7
 def game(x):
@@ -93,6 +95,6 @@ def gamecomp():
     print (f'Это число - {x}\nУгадано за {b} попыток')
 
 
-gamecomp()
+#gamecomp()
 
 
