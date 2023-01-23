@@ -56,7 +56,8 @@ def job():
 def bank(x, y, p):
     g = 0
     p = p/12
-    while y >= x:
+    print (p)
+    while x <= y:
         x += (x/100*p)
         g += 1
     print ('Пройдет лет всего:', round(g/12), 'до получения желаемой суммы')
