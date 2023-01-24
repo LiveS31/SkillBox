@@ -1,3 +1,15 @@
+# Задача 1
+def bank(n):
+    count = 0
+    for i in range(n):
+        b = int(input('Ведите номер клиента:'))
+        if b%2 == 0:
+            if b > 0:
+                count +=1
+    print ('Всего положительных клиентов', (count))
+bank(10)
+
+
 # Задача 2
 def pay():
     bonus = 0
@@ -48,7 +60,17 @@ def chekdigit(digit):
         print(f'{d} - получившееся число равно оригиналу, значит число надо вывести')
     else:
         print('число выводить не нужно')
-chekdigit(int(input()))
+#chekdigit(int(input()))
 
 # задача 7
+def card(n):
+    a = []
+    for i in range(1, n+1):
+        a.append(i)
+    for _ in range(1, n):
+        b = int(input('Введите номера оставшихся карт:'))
+        if b in a:
+            a.remove(b)
+    print ('Номер пропавшей карточки:',*a)
 
+#card(int(input('введите количество карточек:')))
