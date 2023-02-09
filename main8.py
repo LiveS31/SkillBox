@@ -23,7 +23,7 @@
 # print('Ваша еда готова, осторожно, горячо!')
 
 # Задача 4
-# print ('Введите число ')
+# print ('Введите число')
 # a, b, c = int(input('а')), int(input('b')), int(input('c'))
 # if c == 0:
 #     print ('ERROR!!!! c - не может быть 0')
@@ -33,10 +33,10 @@
 #         if i % c == 0:
 #             summ +=i
 #             cont +=1
-#             if cont != 0:
-#                 print(summ/cont)
-#             else:
-#                print ('НЕТ ЧИСЛА')
+#     if cont != 0:
+#         print(summ/cont)
+#     else:
+#         print ('НЕТ ЧИСЛА')
 
 # задача 5
 # a = int(input('Введите начало:'))
@@ -81,7 +81,7 @@
 #     print ('Значение выражения', j/r)
 
 
-# Задача 10
+# #Задача 10
 # x = int(input('Введите кол-во мальчиков:'))
 # y = int(input('Введите кол-во девочек:'))
 # ans =''
@@ -90,14 +90,14 @@
 # elif x >= y:
 #     k = x - y
 #     for i in range(k):
-#         ans += 'BGB'
+#         ans += 'GBG'
 #     for ii in range(y - k):
-#         ans += 'BG'
+#         ans += 'GB'
 # else:
 #     k = y - x
 #     for i in range(k):
-#         ans += 'GBG'
+#         ans += 'BGB'
 #     for ii in range(x - k):
-#         ans += 'GB'
-# print(ans)
+#         ans += 'BG'
+# print(ans) 1,3
 
