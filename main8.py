@@ -22,7 +22,7 @@
 #     break
 # print('Ваша еда готова, осторожно, горячо!')
 
-# Задача 4
+# #Задача 4
 # print ('Введите число')
 # a, b, c = int(input('а')), int(input('b')), int(input('c'))
 # if c == 0:
@@ -81,23 +81,24 @@
 #     print ('Значение выражения', j/r)
 
 
-# #Задача 10
-# x = int(input('Введите кол-во мальчиков:'))
-# y = int(input('Введите кол-во девочек:'))
-# ans =''
-# if (x > 2 * y) or (x > 2 * y):
-#     print('Нет решения')
-# elif x >= y:
-#     k = x - y
-#     for i in range(k):
-#         ans += 'GBG'
-#     for ii in range(y - k):
-#         ans += 'GB'
-# else:
-#     k = y - x
-#     for i in range(k):
-#         ans += 'BGB'
-#     for ii in range(x - k):
-#         ans += 'BG'
-# print(ans) 1,3
+
+# #Задача 10 -----
+x = int(input('Введите кол-во мальчиков:'))
+y = int(input('Введите кол-во девочек:'))
+ans =''
+if (x > 2 * y) or (y > 2 * x):
+    print('Нет решения')
+elif x >= y:
+    k = x - y
+    for i in range(k):
+        ans += 'BGB'
+    for ii in range(y - k):
+        ans += 'BG'
+else:
+    k = y - x
+    for i in range(k):
+        ans += 'GBG'
+    for ii in range(x - k):
+        ans += 'GB'
+print(ans)
 
