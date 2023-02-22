@@ -90,15 +90,15 @@ if (x > 2 * y) or (y > 2 * x):
     print('Нет решения')
 elif x >= y:
     k = x - y
-    for i in range(k):
+    for _ in range(k):
         ans += 'BGB'
-    for ii in range(y - k):
+    for _ in range(y - k):
         ans += 'BG'
 else:
     k = y - x
-    for i in range(k):
+    for _ in range(k):
         ans += 'GBG'
-    for ii in range(x - k):
+    for _ in range(x - k):
         ans += 'GB'
 print(ans)
 
