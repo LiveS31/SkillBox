@@ -45,18 +45,22 @@
 # print ( 'Количество простых чисел в последовательности:', w)
 
 #'Задача 5. Наибольшая сумма цифр'
-# a, b = 0, []
-# for _ in range(int(input('Введите количество цифр:'))):
-#     b.append(int(input('Введите число:')))
-# b = max(b)
-# for i in range(len(str(b))):
-#     a += int(str(b)[i])
+
+# c = []
+# for _ in range(int(input('Количество цифр: '))):
+#     c.append(int(input('Введите число:')))
+# a = sum(map(int, str(c[0])))
+# b = c[0]
+# for i in c:
+#     if sum(map(int, str(i))) > a:
+#         a = sum(map(int, str(i)))
+#         b = i
 # print (f'Максимальное число: {b}, сумма чисел {a}')
 
 #'Задача 6. Пирамидка'
-# a = int(input('Введите количество строк (может быть только четное):'))
-# for i in range(1, a, 2):
-#     print ((' '*((a-i)//2)),'#' * i)
+a = int(input('Введите количество строк:'))
+for i in range(a):
+    print (' ' * (a-i-1) +  '#' * (i*2+1))
 
 #'Задача 7. Пирамидка 2'
 # a, b = int(input('Введите количество уровней:')), 1
@@ -69,8 +73,8 @@
 #   print('')
 
 #'Задача 8. Яма '
-for i in range(1, (n := int(input())) + 1):
-     s = ''
-     for j in range(n, n - i, -1):
-          s += str(j)
-     print(s + '.' * (n * 2 - i * 2) + s[::-1])
+# for i in range(1, (n := int(input())) + 1):
+#      s = ''
+#      for j in range(n, n - i, -1):
+#           s += str(j)
+#      print(s + '.' * (n * 2 - i * 2) + s[::-1])
