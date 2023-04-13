@@ -43,20 +43,28 @@
 #     temp =round(vv/v, 3)
 #     print(f'Объём планеты Земля меньше в (1/{(str(round(1/temp, 3)))}) = {temp} раз')
 
-# print('Задача 6. Ход конём')
-# x = float(input('Введите местоположение коня x: '))
-# y = float(input('Введите местоположение коня y: '))
-# xstep = float(input('Введите местоположение точки на доске x: '))
-# ystep = float(input('Введите местоположение точки на доске y: '))
-# xhorse = int(x * 10)
-# yhorse = int(y * 10)
-# sxhorse = int(xstep * 10)
-# syhorse = int(yhorse * 10)
-# print(f'Конь в клетке ({xhorse}, {yhorse}). Точка в клетке ({sxhorse}, {syhorse}).')
-# if abs((x-sxhorse) * (y-syhorse)) == 2:
-#     print('Нет, конь не может ходить в эту точку.')
-# else:
+print('Задача 6. Ход конём')
+x = float(input('Введите местоположение коня x: '))
+y = float(input('Введите местоположение коня y: '))
+xstep = float(input('Введите местоположение точки на доске x: '))
+ystep = float(input('Введите местоположение точки на доске y: '))
+xhorse = int(x * 10)
+yhorse = int(y * 10)
+sxhorse = int(xstep * 10)
+syhorse = int(ystep * 10)
+print(f'Конь в клетке ({xhorse}, {yhorse}). Точка в клетке ({sxhorse}, {syhorse}).')
+if ((xhorse-sxhorse)**2+(yhorse-syhorse)**2) == 5:
+    print('Да, конь может ходить в эту точку.')
+else:
+    print('Нет, конь не может ходить в эту точку.')
+
+# a1, b1, a2, b2 = int(input()), int(input()), int(input()), int(input())
+# if (((a1 - a2)**2) + ((b1 - b2)**2)) == 5:
 #     print('Да, конь может ходить в эту точку.')
+# else:
+#     print('Нет, конь не может ходить в эту точку.')
+
+
 
 # print('Задача 7. За что?')
 # #?????
