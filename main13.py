@@ -23,8 +23,9 @@ def maximum_of_two(d, c):
         a = d
     else:
         a = c
-    return print(a)
-maximum_of_three(int(input('a: ')), int(input('b: ')), int(input('c: ')))
+    return a
+
+print(maximum_of_three(int(input('a: ')), int(input('b: ')), int(input('c: '))))
 
 #
 # Здравствуйте, Сергей.
