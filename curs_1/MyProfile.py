@@ -88,7 +88,7 @@ def users_info_rec():
 
         rs = ''
         while len(rs) != 20:
-            for i in [i for i in (re.findall(r'\d\.d+|\d+', input('Введите К/с: ')))]:
+            for i in [i for i in (re.findall(r'\d\.d+|\d+', input('Введите Р/С: ')))]:
                 rs += i
             if len(rs) != 20:
                 print('\033[31m\nОшибка ввода! Повторите!\n')
