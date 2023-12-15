@@ -1,4 +1,0 @@
-OS info is 
-uname_result(system='Linux', version='#101-Ubuntu SMP Tue Nov 14 13:30:08 UTC 2023', machine='x86_64')
-
-Python version is 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0] ('64bit', 'ELF')
